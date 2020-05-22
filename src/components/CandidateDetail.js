@@ -32,15 +32,7 @@ export default class CandidateDetail extends Component{
             {selectedCandidate.created}
           </li>       
         </ul>
-        {/* <form onSubmit={this.addCandidate}>
-          <input
-            type="text"
-            value={this.state.name}
-            onChange={this.onNameChange}
-            placeholder="Candidate Name"
-          />
-          <input type="submit" value="Add Candidate" />
-        </form> */}
+        
       </div>
     );
   }else {
