@@ -1,9 +1,11 @@
 import * as CandidateActionTypes from '../actiontypes/candidate';
 
-export const addCandidate = name => {
+export const addCandidate = (name, party, politics )=> {
   return {
     type: CandidateActionTypes.ADD_CANDIDATE,
-    name
+    name,
+    party,
+    politics
   };
 };
 

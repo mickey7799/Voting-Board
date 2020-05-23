@@ -37,7 +37,9 @@ export default function Candidate(state=initialState, action) {
     case CandidateActionTypes.ADD_CANDIDATE: {
 			const addCandidateList = [...state.candidates,   {
           name: action.name,
-          votes: 0,
+					votes: 0,
+					party: action.party,
+					politics: action.politics,
           created: `${month}/${day}/${year}`
       }];
       return {

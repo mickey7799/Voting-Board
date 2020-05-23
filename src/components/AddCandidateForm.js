@@ -5,17 +5,31 @@ export default class AddCandidateForm extends Component {
     addCandidate: PropTypes.func.isRequired,
   };
 
-  state = { name: '' };
+  state = { name: '',
+            party: '',
+            politics: ''
+          };
 
   onNameChange = (e) => {
     const name = e.target.value;
     this.setState({ name });
   };
+  onPartyChange = (e) => {
+    const party = e.target.value;
+    this.setState({ party });
+  };
+  onPoliticsChange = (e) => {
+    const politics = e.target.value;
+    this.setState({ politics });
+  };
 
   addCandidate = (e) => {
     if (e) e.preventDefault();
-    this.props.addCandidate(this.state.name);
-    this.setState({ name: '' });
+    this.props.addCandidate(this.state.name, this.state.party, this.state.politics);
+    this.setState({ name: '',
+                    party: '',
+                    politics: ''
+                   });
   };
 
   render() {
@@ -28,7 +42,19 @@ export default class AddCandidateForm extends Component {
             onChange={this.onNameChange}
             placeholder="Candidate Name"
           />
-          <input type="submit" value="Add Candidate" />
+          <input
+            type="text"
+            value={this.state.party}
+            onChange={this.onPartyChange}
+            placeholder="Candidate Party"
+          />
+          <input
+            type="text"
+            value={this.state.politics}
+            onChange={this.onPoliticsChange}
+            placeholder="Candidate Politics"
+          />
+          <input type="submit" value="Submit" />
         </form>
       </div>
     );
