@@ -1,5 +1,10 @@
 # Voting Board
 
+## Techniques
+- React JS
+- Redux
+- Webpack
+
 ## A simple voting board
 Functionality:
 - Update the votes of each candidate by clicking the "+" and "-" buttons
