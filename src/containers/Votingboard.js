@@ -1,6 +1,7 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component} from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import * as CandidateActionCreators from '../actions/candidate';
 import Header from '../components/Header';
 import Candidate from '../components/Candidate';
@@ -38,11 +39,11 @@ class Votingboard extends Component {
     return (
       <div className="scoreboard">
         <Header candidates={candidates} />
-        <div className="players">
+        <div className="candidates">
           { candidateComponents }
         </div>
         <AddCandidateForm addCandidate={addCandidate} />
-        <div className="player-detail">
+        <div className="candidate-detail">
           <CandidateDetail selectedCandidate={selectedCandidate} />
         </div>
       </div>

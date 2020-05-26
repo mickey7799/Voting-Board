@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class AddCandidateForm extends Component {
   static propTypes = {
@@ -34,7 +35,7 @@ export default class AddCandidateForm extends Component {
 
   render() {
     return (
-      <div className="add-player-form">
+      <div className="add-candidate-form">
         <form onSubmit={this.addCandidate}>
           <input
             type="text"

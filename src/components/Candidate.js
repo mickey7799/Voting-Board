@@ -1,17 +1,18 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import Counter from './Counter';
+import PropTypes from 'prop-types';
 
 const Candidate = props => (
-  <div className="player">
-    <div className="player-name"
+  <div className="candidate">
+    <div className="candidate-name"
       onClick={() => props.selectCandidate(props.index)}>
-      <a className="remove-player"
+      <button className="remove-candidate"
         onClick={() => props.removeCandidate(props.index)}>
         ✖
-      </a>
+      </button>
       {props.name}
     </div>
-    <div className="player-score">
+    <div className="candidate-score">
       <Counter
         index={props.index}
         updateCandidateVotes={props.updateCandidateVotes}

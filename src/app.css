@@ -2,7 +2,6 @@ body {
   background: #d5d5d5; 
   font-family: arial;
   color: #FAFAFA;
-  /* text-transform: uppercase; */
 }
 
 ul {
@@ -69,7 +68,7 @@ h3 {
   }
 
 
-.player {
+.candidate {
   display: flex;
   font-size: 1.2em;
   border-bottom: solid 2px #444;
@@ -77,25 +76,27 @@ h3 {
   cursor: pointer;
 }
 
-  .remove-player {
+  .remove-candidate {
     visibility: hidden;
     margin-right: 10px;
-    color: #e57373;
+    color: red;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
   }
 
-  .player-name:hover .remove-player {
+  .candidate-name:hover .remove-candidate {
     visibility: visible;
   }
 
-  .player-name {
+  .candidate-name {
     flex-grow: 1;
     padding: 20px 10px 20px 30px;
     font-weight: normal;
     font-size: 1.2em;
   }
 
-  .player-score {
+  .candidate-score {
     width: 250px;
     background: blue;
   }
@@ -147,12 +148,12 @@ h3 {
   }
 
 
-.add-player-form form {
+.add-candidate-form form {
   display: flex;
   background-color: #222;
 }
 
-  .add-player-form input[type=text] {
+  .add-candidate-form input[type=text] {
     flex-grow: 1;
     border-width: 0 0 1px 0;
     margin: 15px 10px 15px 15px;
@@ -167,16 +168,16 @@ h3 {
     outline: none;
   }
 
-  .add-player-form input[type=text]::-webkit-input-placeholder{
+  .add-candidate-form input[type=text]::-webkit-input-placeholder{
     color: #666;
     letter-spacing: 2px;
   }
 
-  .add-player-form input[type=text]:focus{
+  .add-candidate-form input[type=text]:focus{
     background-color: #444;
   }
 
-  .add-player-form input[type=submit] {
+  .add-candidate-form input[type=submit] {
     display: block;
     font-size: .6em;
     margin: 15px 15px 15px 0; 
@@ -191,28 +192,28 @@ h3 {
     text-transform: uppercase;
   }
 
-  .add-player-form input[type=submit]:hover{
+  .add-candidate-form input[type=submit]:hover{
     background: #4b71b5;
     color: #fafafa;
     cursor: pointer;
   }
   
-.player-detail {
+.candidate-detail {
   font-size: 1.1em;
   padding: 1.65em 0 1.4em 3em;
   background: #4b71b5;
 }
-  .player-detail p {
+  .candidate-detail p {
     margin: 0;
     color: rgba(255,255,255, .75);
   }
   
-  .player-detail ul {
+  .candidate-detail ul {
     padding: 0;
     text-transform: initial;
   }
   
-  .player-detail ul span {
+  .candidate-detail ul span {
     color: rgba(255, 255, 255, .43);
     display: inline-block;
     padding-right: .6em;
