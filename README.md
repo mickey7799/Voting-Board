@@ -13,13 +13,13 @@ The purpose of this project was to get familiar with React and Redux.
 
 ### Getting Started
 
-- Clone/download the repository on your local machine.
+Clone/download the repository on your local machine.
 
-##### Install dependencies
+#### Install dependencies
 
 `yarn install`
 
-##### Run Voting Board from the root directory.
+#### Run Voting Board from the root directory.
 
 `yarn start`
 
