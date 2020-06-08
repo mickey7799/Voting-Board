@@ -1,6 +1,8 @@
 ## Voting Board
 
-### Demo View
+### Demo
+[Demo of Voting Board](https://mickey7799.github.io/VotingBoard/)
+
 ![](/demo.png)
 
 ### Overview
