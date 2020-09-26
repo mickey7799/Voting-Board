@@ -1,7 +1,7 @@
 ## Voting Board
 
 ### Demo
-[Demo of Voting Board](https://mickey7799.github.io/VotingBoard/)
+[Demo of Voting Board](https://mickey7799.github.io/Voting-Board/)
 
 ![](/demo.png)
 
